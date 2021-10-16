@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+
+
+.myradio {
+    display: none;
+}
+
+.myradio + label {
+    position: relative;
+    padding-left: 25px;
+}
+
+.myradio + label:before,
+.myradio + label:after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.myradio + label:before {
+    left: 0;
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.myradio:checked + label:before {
+    border-color: #3e6aff;
+}
+
+.myradio:checked + label:after {
+    left: 4px;
+    top: 6px;
+    width: 7px;
+    height: 7px;
+    background-color:#3e6aff;
+    border-radius: 50%;
+}
+
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.checkbox + label:before,
+.checkbox + label:after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.checkbox + label:before {
+    left: 2px;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.checkbox:checked + label:before {
+    border-color: #3e6aff;
+}
+
+.checkbox:checked + label:after {
+    left: 5px;
+    top: 6px;
+    width: 8px;
+    height: 5px;
+    box-sizing: border-box;
+    border-left: 2px solid #3e6aff;
+    border-bottom: 2px solid #3e6aff;
+    transform: rotate(-52deg);
+}
+
+textarea {
+    font-family: "Roboto";
+
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+    border-color: #3e6aff;
+}
+
+option:hover {
+    background-color: #3e6aff;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    box-sizing: border-box;
+    padding: 11px 15px;
+    margin: 5px 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.submit {
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: #12d661;
+    border-radius: 3px;
+}
+
+.submit:hover {
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
+    background-color: #07be51;
+}
+
+.simple {
+    max-width: 330px;
+}
+
+.simple input,
+.simple textarea,
+.simple select {
+    width: 100%;
+}
+
+
+.elements-castle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.simple textarea {
+    resize: vertical;
+    min-height: 130px;
+    max-height: 250px;
+}
+
+.block {
+    width: 50%;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.stylization p {
+    color: #b3b3b3;
+    font-family: "Roboto";
+    line-height: 2em;
+    margin: 20px 35px;
+
+}
+
+.cargo {
+    display: flex;
+    display: table;
+}
+
+.goods {
+    display: table-cell;
+}
+
+.date {
+    margin: 0;
+}

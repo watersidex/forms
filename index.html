@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTP-0">
+    <meta name="viewport" content="widb=device-widb, initlal-score=1.0">
+    <title>Forms-Форми</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Форми</h1>
+        <div class="simple">
+            <h2>01. проста форма</h2>
+            <form action="index.html" method="POST">
+                <label><input type="text" placeholder="Введіть ім’я"></label></br>
+                <label><input type="text" placeholder="Email"></label></br>
+                <label class="">
+                    <select>
+                        <option>Ваше місто</option>
+                        <option>Кропивницький</option>
+                        <option>Кам'янець</option>
+                        <option>Київ</option>
+                        <option>Харків</option>
+                        <option>Херсон</option>
+                        <option>Хмельницький</option>
+                    </select>
+                </label>
+                <textarea placeholder="Message"></textarea>
+                <label>
+                    <input type="submit" class="submit" value="Зареєструватися">
+                </label></br>
+            </form>
+        </div>
+        <div class="elements" method="POST">
+            <h2>02. елементи</h2>
+            <form action="index.html" class="elements-castle">
+                <div class="mail">
+                    <p>
+                        <input type="radio" name="myradio" id="newMail" class="myradio">
+                        <label for="newMail">Нова Пошта</label>
+                    </p>
+                    <p>
+                        <label><input type="radio" name="myradio" id="courier" class="myradio">
+                            <label for="courier">Кур’єр</label>
+                    </p>
+                    <p>
+                        <label><input type="radio" name="myradio" id="pickup" class="myradio">
+                            <label for="pickup">Самовивіз</label>
+                    </p>
+                </div>
+                <div class="personal">
+                    <p>
+                        <input type="checkbox" id="contract" class="checkbox">
+                        <label for="contract">Прочитав умови договору</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="debit-credit" class="checkbox">
+                        <label for="debit-credit">Згідний з ПДВ 9%</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="emailNews" class="checkbox">
+                        <label for="emailNews">Oтримувати новини на ел. пошту</label>
+                    </p>
+                </div>
+                <div class="block">
+                    <div class="cargo">
+                        <div class="stylization">
+                            <p>Статус</p>
+                            <p>Дата</p>
+                        </div>
+                        <div class="goods">
+                            <p>
+                                <input type="checkbox" id="new" class="checkbox">
+                                <label for="new">Новинки</label>
+                                <input type="checkbox" id="promotional" class="checkbox">
+                                <label for="promotional">Акційні</label>
+                                <input type="checkbox" id="saleOfGoods" class="checkbox">
+                                <label for="saleOfGoods">Розпродаж товари</label>
+                            </p>
+                            <p class="date"><label><input type="date"></label></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
