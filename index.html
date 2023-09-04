@@ -3,92 +3,296 @@
 
 <head>
     <meta charset="UTP-0">
-    <meta name="viewport" content="widb=device-widb, initlal-score=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" maximum-scale="2.0", minimum-scale="1.0">
     <title>Forms-Форми</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="wrapper">
+    <main class="wrapper">
         <h1>Форми</h1>
-        <div class="simple">
+        <div class="simple margin">
             <h2>01. проста форма</h2>
             <form action="index.html" method="POST">
-                <label><input type="text" placeholder="Введіть ім’я"></label></br>
-                <label><input type="text" placeholder="Email"></label></br>
-                <label class="">
-                    <select>
+                <label><input type="text" class="pointer" placeholder="Введіть ім’я"></label></br>
+                <label><input type="text" class="pointer" placeholder="Email"></label></br>
+                <label class="styling-sel text">
+                    <select class="pointer">
                         <option>Ваше місто</option>
-                        <option>Кропивницький</option>
-                        <option>Кам'янець</option>
                         <option>Київ</option>
-                        <option>Харків</option>
                         <option>Херсон</option>
+                        <option>Харків</option>
+                        <option>Кам'янець</option>
                         <option>Хмельницький</option>
+                        <option>Кропивницький</option>
                     </select>
                 </label>
-                <textarea placeholder="Message"></textarea>
+                <textarea class="pointer" placeholder="Message"></textarea>
                 <label>
-                    <input type="submit" class="submit" value="Зареєструватися">
-                </label></br>
+                    <input type="submit" class="submit pointer" value="Зареєструватися">
+                </label>
             </form>
         </div>
-        <div class="elements" method="POST">
+        <hr>
+        <div class="elements margin" method="POST">
             <h2>02. елементи</h2>
             <form action="index.html" class="elements-castle">
                 <div class="mail">
                     <p>
                         <input type="radio" name="myradio" id="newMail" class="myradio">
-                        <label for="newMail">Нова Пошта</label>
+                        <label for="newMail" class="pointer">Нова Пошта</label>
                     </p>
                     <p>
-                        <label><input type="radio" name="myradio" id="courier" class="myradio">
-                            <label for="courier">Кур’єр</label>
+                        <input type="radio" name="myradio" id="courier" class="myradio">
+                        <label for="courier" class="pointer">Кур’єр</label>
                     </p>
                     <p>
-                        <label><input type="radio" name="myradio" id="pickup" class="myradio">
-                            <label for="pickup">Самовивіз</label>
+                        <input type="radio" name="myradio" id="pickup" disabled class="myradio">
+                        <label for="pickup" class="pointer">Самовивіз</label>
                     </p>
                 </div>
                 <div class="personal">
                     <p>
                         <input type="checkbox" id="contract" class="checkbox">
-                        <label for="contract">Прочитав умови договору</label>
+                        <label for="contract" class="pointer">Прочитав умови договору</label>
                     </p>
                     <p>
                         <input type="checkbox" id="debit-credit" class="checkbox">
-                        <label for="debit-credit">Згідний з ПДВ 9%</label>
+                        <label for="debit-credit" class="pointer">Згідний з ПДВ 9%</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="emailNews" class="checkbox">
-                        <label for="emailNews">Oтримувати новини на ел. пошту</label>
+                        <input type="checkbox" id="emailNews" disabled class="checkbox">
+                        <label for="emailNews" class="pointer">Oтримувати новини на ел. пошту</label>
                     </p>
                 </div>
                 <div class="block">
                     <div class="cargo">
                         <div class="stylization">
-                            <p>Статус</p>
-                            <p>Дата</p>
+                            <p class="pointer">Статус</p>
+                            <p class="pointer">Дата</p>
                         </div>
                         <div class="goods">
                             <p>
                                 <input type="checkbox" id="new" class="checkbox">
-                                <label for="new">Новинки</label>
-                                <input type="checkbox" id="promotional" class="checkbox">
-                                <label for="promotional">Акційні</label>
+                                <label for="new" class="pointer">Новинки</label>
+                                <input type="checkbox" class="checkbox" id="promotional" class="checkbox">
+                                <label for="promotional" class="pointer">Акційні</label>
                                 <input type="checkbox" id="saleOfGoods" class="checkbox">
-                                <label for="saleOfGoods">Розпродаж товари</label>
+                                <label for="saleOfGoods" class="pointer">Розпродаж товари</label>
                             </p>
-                            <p class="date"><label><input type="date"></label></p>
+                            <p class="date"><label><input type="date" class="pointer"></label></p>
                         </div>
                     </div>
                 </div>
+        </div>
+        <hr>
+        <h2>03. стилізовані чекбокси</h2>
+        <div class="styleChekbox margin">
+            <div class="img">
+                <p><input type="radio" name="sexRadio" id="maleFigure" class="male-female male">
+                    <label for="maleFigure" class="pointer">Чоловік</label></p>
+                <p><input type="radio" name="sexRadio" id="femaleFigure" class="male-female female">
+                    <label for="femaleFigure" class="pointer">Жінка</label></p>
+            </div>
+            <div class="commitments">
+                <p>
+                    <input type="checkbox" id="news" class="bond">
+                    <label for="news" class="pointer">Отримувати новини</label>
+                </p>
+                <p>
+                    <label><input type="checkbox" id="buy" class="bond">
+                        <label for="buy" class="pointer">Купити додому ковбаси</label>
+                </p>
+                <p>
+                    <label><input type="checkbox" id="light" class="bond">
+                        <label for="light" class="pointer">Включити світло</label>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="table-form margin">
+            <h2>04. форма таблицею</h2>
+            <p class="bid">Заповніть усі необхідні поля</p>
+            <div class="table">
+                <div class="head">
+                    <span>
+                        <label for="fio">ФІО:</label>                       
+                    </span>
+                    <span>
+                        <label><input type="text" id="fio" class="text pointer" placeholder="Введіть ім’я"></label>
+                    </span>
+                </div>
+                <div class="head">
+                    <span>
+                        <label for="parol">Пароль:</label>
+                    </span>
+                    <span>
+                        <label><input type="text" id="parol" class="text pointer"
+                                placeholder="Введіть не менше 6 символів"></label>
+                    </span>
+                </div>
+                <div class="head">
+                    <span>
+                        <label for="town">Місто:</label>
+                    </span>
+                    <span>
+                        <label class="styling-sel text">
+                            <select id="town" class="pointer">
+                                <option>Хмельницький</option>
+                                <option>Вінниця</option>
+                                <option>Житомир</option>
+                                <option>Черкаси</option>
+                                <option>Одеса</option>
+                                <option>Львів</option>
+                            </select>
+                        </label>
+                    </span>
+                </div>
+                <div class="head">
+                    <span>
+                        <label for="male">Стать:</label>
+                    </span>
+                    <span>
+                        <div class="mail">
+                            <p>
+                                <input type="radio" name="myradio" id="male" class="myradio">
+                                <label for="male" class="pointer">Чоловік</label>
+                                <label><input type="radio" name="myradio" id="female" class="myradio">
+                                    <label for="female" class="pointer">Жінка</label>
+                            </p>
+                        </div>
+                    </span>
+                </div>
+                <div class="head">
+                    <span>
+                        <label for="file">Фото:</label>
+                    </span>
+                    <span>
+                        <input type="file" id="file" class="file">
+                        <label for="file" class="label-file pointer">Виберіть файл</label>
+                    </span>
+                </div>
+                <div class="head">
+                    <span class="comment">
+                        <label for="textarea">Коментарій:</label>
+                    </span>
+                    <span>
+                        <textarea id="textarea" class="text pointer" placeholder="Введіть текст повідомлення"></textarea>
+                    </span>
+                </div>
+                <div class="head">
+                    <span>
+                        <p>
+                            &nbsp;
+                        </p>
+                    </span>
+                    <span>
+                        <label>
+                            <input type="submit" class="submit text pointer" value="Зареєструватися">
+                        </label>
+                    </span>
+                </div>
+            </div>
             </form>
         </div>
-    </div>
+        <hr>
+        <form class="table-list margin">
+            <h2>05. форма таблицею</h2>
+            <p class="bid">Оформлення заявки</p>
+            <div class="table">
+                <div class="head">
+                    <span>
+                        <label for="FioName">Прізвище та ім’я</label>
+                        <input type="text" id="FioName" class="text pointer">
+                    </span>
+                    <span>
+                        <label for="el">Ел. пошта</label>
+                        <input type="text" id="el" class="text pointer">
+                    </span>
+                    <span>
+                        <label for="numberPhone">Телефон</label>
+                        <input type="text" id="numberPhone" class="text pointer">
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="table">
+                <div class="head">
+                    <span>
+                        <label for="country">Країна</label>
+                        <select id="country" class="text pointer">
+                            <option>Індонезія</option>
+                            <option>Греція</option>
+                            <option>Дубай</option>
+                            <option>Турція</option>
+                            <option>Бельгія</option>
+                            <option>Америка</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="adresa">Адреса</label>
+                        <input type="text" id="adresa" class="text pointer">
+                    </span>
+                </div>
+            </div>
+            <div class="table">
+                <div class="head">
+                    <span>
+                        <label for="vilage">Місто</label>
+                        <input type="text" id="vilage" class="text pointer">
+                    </span>
+                    <span>
+                        <label for="home">Будинок</label>
+                        <input type="text" id="home" class="text pointer">
+                    </span>
+                    <span>
+                        <label for="index">Поштовий індекс</label>
+                        <input type="text" id="index" class="text pointer">
+                    </span>
+                </div>
+            </div>
+            <div class="agreed">
+                <input type="checkbox" id="agreed" class="checkbox agreed">
+                <label for="agreed" class="pointer">Я погоджуюсь з правилами оплати та доставки товару</label>
+                <hr>
+                <div class="key">
+                    <input type="reset" value="Повернутися назад" class="reset pointer">
+                    <input type="submit" value="Оформити покупку" class="submit-input pointer"></div>
+            </div>
+        </form>
+        <form action="index.html" method="POST">
+            <div class="fixed">
+                <input type="checkbox" class="close">
+                <label for="close">
+                    <div>
+                        <span>Форма</span>
+                    </div>
+                </label>
+                <input type="checkbox" id="close" class="close">
+                <label for="close">
+                    <b>+</b>
+                </label>
+                <h2>06. фіксована форма</h2>
+                <div class="color">
+                    <label class="label">Логін</label>
+                    <input type="text" class="text pointer mb10">
+                    <label class="label">Пароль</label>
+                    <input type="text" class="text pointer mb10">
+                    <a href="#">Забули пароль?</a>
+                    <p>
+                        <input type="checkbox" id="password" class="checkbox">
+                        <label for="password" class="sign pointer">Запам’ятати пароль</label>
+                    </p>
+                    <input type="submit" value="Увійти" class="submit text pointer">
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
